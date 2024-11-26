@@ -1,0 +1,41 @@
+body {
+    font-family: Candara, serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: grey;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+input[type= text],
+select {
+    padding: 5px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid white;
+    width: 200px;
+    height: 30px;
+}
+
+button {
+    background-color: aliceblue;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s
+}
+p{
+    font-size: 30px;
+    font-weight: bold;
+    color: gold;
+    margin: 20px 0;
+}
+#converted{
+    color: blue;
+}
