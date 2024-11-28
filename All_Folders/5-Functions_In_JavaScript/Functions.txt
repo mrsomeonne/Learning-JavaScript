@@ -1,0 +1,13 @@
+IN THIS CHAPTER WE WILL LEARN:
+--------------------------------------------------
+Functions In JavaScript
+-> Parameters and Arguments
+-> Returning Values From Function
+-> Function Expressions
+-> Arrow Function
+-> When To Use Which Kind Of Function Declaration
+-> Function Inside Objects
+-> Methods With Arrays - map(), filter() and more
+
+=> Project Unit Converter
+=> Project To-Do List Using JavaScript

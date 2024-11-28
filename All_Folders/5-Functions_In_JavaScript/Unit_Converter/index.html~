@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Unit Converter</h1>
+<input type="numbe" id="inputValue" placeholder="Enter Value">
+<select id="conversionType">
+    <option value="mToFt">
+        Meter to Feet
+    </option>
+    <option value="kgTolb">
+        Kilogram to Pounds
+    </option>
+    <option value="cToF">
+        Celsius to Fahrenheit
+    </option>
+</select>
+<button id="convert">Convert</button>
+<p>
+    Converted Value : <span id="convertedValue">0</span>
+</p>
+</body>
+<script src="index.js"></script>
+</html>
