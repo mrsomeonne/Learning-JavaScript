@@ -19,8 +19,9 @@ console.log(valueInNumber);
 // NaN => Not a Number
 // null => 0
 // undefined
-// true => 1, false => 0
+// true => 1, false => 0 */
 
+/* // Boolean(isLoggedIn)
 // let isLoggedIn = true; // true
 // let isLoggedIn; // false
 // let isLoggedIn = ""; //false
@@ -33,10 +34,11 @@ console.log(booleanIsLoggedIn);
 // "" => false
 // "manish" => true
 // undefined => false
-
  */
 
-let someNumber = 33; //=> "33"
+/* // String(stringNumber)
+// let someNumber = 33; //=> "33"
+let someNumber = true;
 console.log(someNumber);
 
 let stringNumber = String(someNumber);
@@ -44,3 +46,42 @@ console.log(stringNumber);
 console.log(typeof stringNumber);
 
 // 33 => "33" (number to string)
+// true => "true" */
+
+// ****************** Operations *************
+
+let value = 3;
+let negValue = -value;
+// console.log(negValue); // -3
+// console.log(2+2); // 4
+// console.log(2-2); // 0
+// console.log(2*2); // 4
+// console.log(2/2); // 1
+// console.log(2**3); // 8
+// console.log(2 % 3); // 2
+
+/* let str1 = "Hello";
+let str2 = " World!"
+let str3 = str1 + str2;
+console.log(str3); // Hello World!
+
+console.log(1 + '2'); // 12
+console.log('1' + 2); // 12
+console.log('1' + 2 + 2); // 122
+console.log(1 + 2 + '2'); // 32
+console.log(1 + 2 + '2' + 2); // 322 */
+
+
+// Do not conduct these types of operations.
+console.log(true); // true
+console.log(+true); // 1
+console.log(-true); // -1
+console.log(!true); // false
+console.log(+""); // 0
+
+// Increment
+let gameCounter=100;
+gameCounter++; // 101 
+++gameCounter; // 102
+console.log(gameCounter); // 101, 102
+
