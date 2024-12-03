@@ -1,6 +1,7 @@
 // Scopes => Global and Local Scope
+// Scopes are used to limit the visibility of variables and functions.
 
-// Global Scope
+/* // Global Scope
 var a = 100;
 // let b = 20;
 // const c = 30;
@@ -32,7 +33,49 @@ console.log(a);
 for (let index = 0; index < 5; index++) {
   const element = index;
   // Index have scope only inside the for loop
+} */
+
+/*********************************SCOPE Pt.2**************************/
+
+/* //Nested Function
+function one(){
+  // const username = "Manish";
+  function two(){
+    const website = "youtube";
+    console.log(username);
+    
+  }
+  // console.log(website); // out of scope {ERROR}
+  two()
+}
+ 
+// one()
+
+//In IF-ELSE
+if(true){
+  const username = "Manish"
+  if (username == "Manish"){
+    const website = " youtube"
+    console.log(username + website);
+  }
+  console.log(website);
+  
+}
+console.log(username); */
+
+// +++++++++++++++++++++++++++++ Interesting +++++++++++++++
+
+addOne(5); // No error even it is before deceleration
+function addOne(num){
+  return num + 1;
 }
 
-/********************* */
+// console.log(addOn(5));
+  
+// addTwo(5);  // Error because it is before initialization
+const addTwo = function(num){
+  return num + 2;
+}
+addTwo(5);
 
+// there is different treatment to scope according to types of deceleration
