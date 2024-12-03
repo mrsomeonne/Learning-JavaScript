@@ -26,7 +26,7 @@ console.log(regularUser.fullName); // { userFullName: { firstName: 'Harry', last
 console.log(regularUser.fullName.userFullName); // { firstName: 'Harry', lastName: 'Lewis' }
 console.log(regularUser.fullName.userFullName.firstName); // Harry */
 
-// Combining Objects
+/* // Combining Objects
 const obj1 = {
   1: 'a',
   2: 'b'
@@ -56,8 +56,9 @@ console.log(obj6);
 const obj7 = {...obj1, ...obj2, ...obj5};
 console.log(obj7);
 // output : { '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' }
+ */
 
-// Data form DataBase will come as arrays of objects.
+/* // Data form DataBase will come as arrays of objects.
 
 const users = [
   {
@@ -74,9 +75,9 @@ const users = [
   }
 ]
 
-console.log(users[1].email); //example2.com
+console.log(users[1].email); //example2.com */
 
-const newUser = {
+/* const newUser = {
   id: "123abc",
   name: "Harry",
   isLoggedIn: true
@@ -87,6 +88,61 @@ console.log(Object.values(newUser)); // [ '123abc', 'Harry', true ]
 console.log(Object.entries(newUser)); // [ [ 'id', '123abc' ], [ 'name', 'Harry' ], [ 'isLoggedIn', true ] ]
 
 console.log(newUser.hasOwnProperty("name")); // true
-console.log(newUser.hasOwnProperty("email")); // false
+console.log(newUser.hasOwnProperty("email")); // false */
 
+/**************************** OBJECTS Pt.3 **********************************/
+
+// DESTRUCTURING
+
+const course = {
+  courseName: "JS in Hindi",
+  price: "999",
+  courseInstructor: "Hitesh"
+}
+// course.courseInstructor;
+//const {courseInstructor} = course;
+//console.log(courseInstructor); // Hitesh
+// If you think that the variable name for courseInstructor is long you can also destructure it
+
+const {courseInstructor: instructor} = course;
+console.log(instructor); // Hitesh  // using instructor instead of courseInstructor
+
+// You can also destructure arrays as well, it is rarely used
+
+// API's
+// example: Menu card in a hotel is like a API's documentation
+// Previously value used to come in the XML format but nowadays value cones in JSON format.
+
+//JSON Object example
+// {
+//   "name" : "Someone",
+//   "courseName" : "JavaScript",
+//   "price" : "free"
+// }
+
+// API can also come in the format of Arrays
+[
+  {
+    //OBJ
+  },
+  {
+    //OBJ
+  },
+  {
+    //OBJ
+  }
+]
+
+// You can use JSON Formatter tools to understand the raw JSON
+
+
+
+
+/* //Example Method
+// React -> You should use destructure
+const navbar = ({company}) => {
+
+}
+
+navbar(company = "JerryCo") */
 
