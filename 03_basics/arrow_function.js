@@ -58,5 +58,5 @@ console.log(addThree(5,6,7));
 // Explicit return
 // To return object you must wrap inside parenthesis
 const sum = (one, two) => ({username: "manish"})
-console.log(sum(3,4));
+console.log(sum(3,4)); // { username: 'manish' }
 
