@@ -50,6 +50,12 @@ if (balance < 500) {
   console.log("Greater than 750");
 }
 
+/*// LOGICAL OPERATORS:
+  && -> AND
+  || -> OR
+  ! -> NOT
+*/
+
 // Multiple conditionals
 const userLoggedIn = true;
 const debitCard = true;
