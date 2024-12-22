@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Part 2.5</title>
+</head>
+<body style="background-color: #212121; color: white;">
+  
+</body>
+
+<script>
+  // Creating DIV element
+  const div = document.createElement('div')
+  console.log(div);
+  div.className = "main";
+  div.id = "myId";
+  div.id = Math.round(Math.random() * 10);
+  div.setAttribute("title","generated title");
+  div.style.backgroundColor = "green";
+  div.style.padding = "12px";
+  // div.innerText = "Inserting Div Using Script"
+  const addText = document.createTextNode("Chai or Code")
+  div.appendChild(addText);
+  
+  //Attaching Document to HTML
+  document.body.appendChild(div);
+  
+
+</script>
+
+</html>
