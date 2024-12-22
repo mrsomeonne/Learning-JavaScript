@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit and Remove using DOM</title>
+</head>
+<body style="background-color: #212121; color: white;">
+  <!-- Edit and Remove Elements using DOM -->
+
+  <ul class="languages">
+    <li>JavaScript</li>
+  </ul>
+
+</body>
+
+<script>
+  // Adding a list
+  function addLanguage (langName) {
+    const li = document.createElement('li')
+    li.innerHTML = `${langName}`;
+    document.querySelector('.languages').appendChild(li)    
+  }
+  // addLanguage("Python");
+  // addLanguage("Java");
+  // Might have optimized problem in large scale
+
+  // More optimized approach
+  function addOptLanguage (langName){
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(langName));
+    document.querySelector('.languages').appendChild(li);
+  }
+  addOptLanguage("Java");
+  addOptLanguage("Python");
+  // Do not use innerHtml route go to append child route
+
+  // Edit values
+  const secondLang = document.querySelector("li:nth-child(2)");  // nth-child() -> like css
+/*   // not optimized way
+  secondLang.innerHTML = "C++";
+  console.log(secondLang); */
+  //optimized way
+  const newLi = document.createElement('li');
+  newLi.textContent = "C++";
+  secondLang.replaceWith(newLi);
+
+  //Another Edit
+  const firstLang = document.querySelector('li:first-child')
+  firstLang.outerHTML = `<li>PHP</li>`;
+
+  // Remove Elements
+  const lastLang = document.querySelector('li:last-child');
+  lastLang.remove();
+</script>
+
+</html>
