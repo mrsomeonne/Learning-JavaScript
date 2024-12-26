@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Learning JavaScript Set Interval</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    
+  </body>
+  <script>
+   
+/*    //function setInterval(handler: TimerHandler, timeout?: number, ...arguments: any[]): number
+    setInterval(function(){
+      console.log("Manish", Date.now);
+      
+    },1000) */
+
+    // const sayDate = function () {
+    //   console.log("Date", Date.now());
+      
+    // }
+    // // setInterval(sayDate, 1000)
+
+    // // const intervalId = setInterval(sayDate, 1000)
+
+    // // clearInterval(intervalId);
+
+    // Start and Stop 
+
+
+    document.querySelector('#start').addEventListener('click', function(){
+      const intervalId = setInterval(function(){
+        console.log("Manish", Date.now());
+        const stop = document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(intervalId);        
+        })
+      },1000)
+    })
+    
+  </script>
+</html>
