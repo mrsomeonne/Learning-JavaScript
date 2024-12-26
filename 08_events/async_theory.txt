@@ -1,0 +1,46 @@
+JavaScript Asynchronous Code
+
+JavaScript
+-> Synchronous
+-> Single Threaded
+
+
+
+Execution context
+-> Execute one code at a time
+  - console log -1
+  - console log -2
+
+  -> each operation waits for the last one to complete before Executing.
+
+       CALL STACK           MEMORY HEAP
+
+
+
+
+Blocking Code             v/s        Non Blocking Code
+
+- Block the flow of            - Does not block execution
+  Program
+
+- Read File Sync               - Read File Async
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
