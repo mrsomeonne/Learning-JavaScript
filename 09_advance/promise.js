@@ -112,5 +112,31 @@ fetch ("https://jsonplaceholder.typicode.com/users")
 .then((data) => console.log(data))
 .catch((error) => console.log(error));
 
+// ---------------------------------------------------------
+
+// Fetch API helps you to consume API's
+// It also provides a way to fetch data from a server
+
+//Fetch methods starts the process of fetching the resource from the network, returning a promise which is fulfilled once the response is available.
+// It returns a promise that resolves to a Response object.
+
+// Fetch gets a special queue (priority / fetch queue)/ micro task
+// this is the reason that this is executed first (VIP)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
